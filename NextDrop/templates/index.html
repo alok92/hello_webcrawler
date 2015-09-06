@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crawl the Web</title>
+</head>
+<body>
+<form class="input_user" action="/show_img" method="POST">
+    <label>Enter a valid URL you wish to crawl</label>
+    <input type="text" id="url_id" name="input_url" value="http://nextdrop.org/" required autofocus >
+    <button type="submit" id="submit_id">Submit</button>
+</form>
+<p>
+    {{ result }}
+</p>
+</body>
+</html>
