@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 def crawling_bfs(depth_url, http_list):
-    ''' parse the graph, get all links until level 3 deep '''
+    ''' parse the graph, get all links until level 2 deep '''
     depth_url -= 1
     if depth_url > 0:
         for links in http_list:
